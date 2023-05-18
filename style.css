@@ -1,0 +1,102 @@
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+div.logo {
+  width: 23%;
+  padding: 1%;
+  text-align: left;
+}
+nav.inline-block {
+  width: 72%;
+  padding: 1%;
+  text-align: right;
+}
+ul {
+  width: 50%;
+  text-align: right;
+}
+.heroimg {
+  padding: 10px;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+  display: grid; 
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 25%;
+  grid-template-areas: "bio portrait";
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+footer {
+  background-color: #0B7A1C;
+  color: #ffffff;
+}
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: center;
+}
+header.Navigation {
+  background-color:#292a2a;
+  color:white
+}
+div.flexContainer {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+  background-color: #5abd6a;
+}
+div.flexContainer {
+display: flex;
+flex-direction: row;
+}
+div.container1 {
+  width: 32%;
+}
+div.container2 {
+  width: 32%;
+}
+div.container3 {
+  width: 32%;
+}
+  .workitem1 {
+    grid-area: workitem1;
+}
+  .workitem2 {
+    grid-area: workitem2;
+}
+  .workitem3 {
+    grid-area: workitem3;
+}
+.workGrid {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-areas: "workitem1 workitem2 workitem3";
+    background-color: #292a2a;
+    color:#ffffff;
+    }
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px){
+  div.flexContainer {
+    flex-direction: column;
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .workGrid {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "workitem1"
+    "workitem2" 
+    "workitem3";
+  }
+}
