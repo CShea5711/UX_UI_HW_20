@@ -4,8 +4,97 @@
         <title>UX/UI Homework 20</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/index.css" type="text/css">
     </head>
     <body>
+<!--I used a fluid jumbotron component-->
+        <div class="jumbotron jumbotron-fluid1">
+            <div class="containerjumbo1">
+              <h1 class="display-4">Wanderer</h1>
+              <p class="lead">A Travel Planning Mobile App.</p>
+            </div>
+          </div>
+<!--I used Bootstrap 4's col system-->
+        <div class="container">
+            <div class="rowNav">
+              <div class="MyRole">
+                1 of 7
+              </div>
+              <div class="TheProcess">
+                2 of 7
+              </div>
+              <div class="UserResearch">
+                3 of 7
+              </div>
+              <div class="Ideation">
+                4 of 7
+              </div>
+              <div class="UsabilityTesting">
+                5 of 7
+              </div>
+              <div class="Prototype">
+                6 of 7
+              </div>
+              <div class="CaseStudy">
+                7 of 7
+              </div>
+            </div>
+          </div>
+<!--I used a Card Component-->
+          <div class="research" style="width: 18rem;">
+            <div class="card-body1">
+              <h5 class="card-title">Research Plan</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Predicted Problem</h6>
+              <p class="card-text">Plan bullet points
+                Plan bullet points
+                Plan bullet points
+              </p>
+              <a href="#" class="card-link">Research Plan Link</a>
+            </div>
+          </div>
+          <div class="research" style="width: 18rem;">
+            <div class="card-body2">
+              <h5 class="card-title">Research Findings</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Problem Statement</h6>
+              <p class="card-text">Plan bullet points
+                Plan bullet points
+                Plan bullet points
+              </p>
+              <a href="#" class="card-link">Research Findings Link</a>
+              <a href="#" class="card-link">Research Notes Link</a>
+            </div>
+          </div>
+<!--I used another fluid jumbotron component-->
+          <div class="jumbotron jumbotron-fluid2">
+            <div class="containerjumbo2">
+              <h1 class="display-4">Problem Statement</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore saepe. Aliquam in porro pariatur temporibus quasi earum, est esse autem quae aperiam repellendus iusto perspiciatis ullam praesentium velit saepe.</p>
+            </div>
+          </div>
+<!--I used a collapse component-->          
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">First Iteration</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Second Iteration</button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Compare!</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <img src="image">
+                <div class="card card-body">
+                  Description.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <img src="image2">
+                <div class="card card-body">
+                  Description.
+                </div>
+              </div>
+            </div>
+          </div>
         <footer>
             <ul>
                 <li class="inline-block">About</li>
@@ -15,4 +104,18 @@
             </ul>
         </footer>
     </body>
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/esm/popper.min.js",
+        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.esm.min.js"
+      }
+    }
+    </script>
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+    </script>
 </html>
