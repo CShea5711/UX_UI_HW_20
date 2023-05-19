@@ -8,3 +8,15 @@
 .component-header {
   color: var(--bs-purple);
 }
+.rowNav {
+  margin: 0 auto;
+  display: grid; 
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.research {
+  margin:auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
